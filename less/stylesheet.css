@@ -15,7 +15,7 @@ body {
   padding: 0px;
   font-size: 0.89285714vw;
   overflow-x: hidden;
-  font-family: 'Bebas', sans-serif;
+  font-family: 'Bebas Neue', sans-serif;
   background-color: #181818;
 }
 html .locked,
@@ -25,17 +25,19 @@ body .locked {
 .contentWrapper {
   width: 100vw;
   margin: 0 auto;
-  padding: 0 8.37053571vw;
+  padding: 0 5.58035714vw;
   position: relative;
 }
 header {
   width: 100vw;
   height: 6.97544643vw;
+  color: #181818;
   z-index: 2;
   position: fixed;
   font-size: 1.00446429vw;
   line-height: 6.97544643vw;
   transition: background-color 0.3s ease-in-out;
+  background-color: #CF5300;
 }
 header.display {
   background-color: #CF5300;
@@ -43,10 +45,14 @@ header.display {
 }
 header .logo {
   float: left;
+  color: #181818;
 }
 header .links {
   float: left;
-  padding: 0px 0px 0px 22.04241071vw;
+  width: 88.8%;
+  position: absolute;
+  text-align: center;
+  color: #181818;
 }
 header .links a {
   padding: 0px 2.79017857vw 0px 0px;
@@ -56,6 +62,7 @@ header .links a:nth-child(6) {
 }
 header .socials {
   float: right;
+  color: #181818;
   font-size: 1.33928571vw;
 }
 header .socials a {
@@ -64,6 +71,56 @@ header .socials a {
 header .socials a:nth-child(4) {
   padding: 0px;
 }
+.pageContainer {
+  position: relative;
+  z-index: 1;
+  padding-top: 6.97544643vw;
+  overflow: hidden;
+  width: 100vw;
+  height: 200vh;
+}
+.pageContainer .contentWrapper .introBlock {
+  height: calc(100vh - 6.97544643vw);
+  overflow: hidden;
+}
+.pageContainer .contentWrapper .introBlock .introContainer .gridContainer {
+  display: grid;
+  grid-template-columns: 49.15% 49.15%;
+}
+.pageContainer .contentWrapper .introBlock .introContainer .gridContainer .gridItem img {
+  position: relative;
+  width: 50%;
+  display: block;
+  background-size: cover;
+  margin: 0px auto;
+  padding: 50px 0px 10px 0px;
+}
+.pageContainer .contentWrapper .introBlock .introContainer .gridContainer .gridItem:nth-child(2) img {
+  position: relative;
+  width: 100%;
+  display: block;
+  background-size: cover;
+  padding: 0px;
+}
+.pageContainer .contentWrapper .introBlock .introContainer .gridContainer .gridItem .songInfo {
+  text-align: center;
+}
+.pageContainer .contentWrapper .introBlock .introContainer .gridContainer .gridItem .songInfo span:nth-child(1) {
+  text-transform: uppercase;
+  font-family: 'oswald', sans-serif;
+  font-size: 24px;
+}
+.pageContainer .contentWrapper .introBlock .introContainer .gridContainer .gridItem .songInfo span:nth-child(3) {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 50px;
+  letter-spacing: 3px;
+}
+.pageContainer .contentWrapper .introBlock .introContainer .gridContainer .gridItem .songInfo span:nth-child(5) {
+  font-family: 'oswald', sans-serif;
+  font-weight: 100;
+  font-size: 24px;
+}
 @media (max-width: 1200px) {
   header {
     height: 80px;
@@ -71,6 +128,12 @@ header .socials a:nth-child(4) {
     line-height: 80px;
   }
   header .logo {
+    font-size: 14px;
+  }
+  header .links {
+    font-size: 14px;
+  }
+  header .socials {
     font-size: 14px;
   }
   .pageContainer {

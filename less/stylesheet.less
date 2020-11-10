@@ -16,7 +16,7 @@ html, body {
     padding: 0px;
     font-size: 0.8928571428571429vw;
     overflow-x: hidden;
-    font-family: 'Bebas', sans-serif;
+    font-family: 'Bebas Neue', sans-serif;
     background-color: #181818;
     .locked {
         overflow-y: hidden
@@ -26,28 +26,34 @@ html, body {
 .contentWrapper {
     width: 100vw;
     margin: 0 auto;
-    padding: 0 8.370535714285714vw;
+    padding: 0 5.580357142857143vw;
     position: relative;
 }
 
 header {
     width: 100vw;
     height: 6.975446428571429vw;
+    color: #181818;
     z-index: 2;
     position: fixed;
     font-size: 1.0044642857142858vw;
     line-height: 6.975446428571429vw;
     transition: background-color 0.3s ease-in-out;
+    background-color: #CF5300;
     &.display {
         background-color: #CF5300;
         transition: background-color 0.3s ease-in-out;
     }
     .logo {
         float: left;
+        color: #181818;
     }
     .links {
         float: left;
-        padding: 0px 0px 0px 22.042410714285715vw;
+        width: 88.8%;
+        position: absolute;
+        text-align: center;
+        color: #181818;
         a {
             padding: 0px 2.7901785714285716vw 0px 0px;
             &:nth-child(6) {
@@ -57,11 +63,73 @@ header {
     }
     .socials {
         float: right;
+        color: #181818;
         font-size: 1.3392857142857142vw;
         a {
             padding: 0px 2.7901785714285716vw 0px 0px;
             &:nth-child(4) {
                 padding: 0px;
+            }
+        }
+    }
+}
+
+.pageContainer {
+    position: relative;
+    z-index: 1;
+    padding-top: 6.975446428571429vw;
+    overflow: hidden;
+    width: 100vw;
+    height: 200vh;
+    .contentWrapper {
+        .introBlock {
+            height: calc(100vh - 6.975446428571429vw);
+            overflow: hidden;
+            .introContainer {
+                .gridContainer {
+                    display: grid;
+                    grid-template-columns: 49.15% 49.15%;
+                    .gridItem {
+                        img {
+                            position: relative;
+                            width: 50%;
+                            display: block;
+                            background-size: cover;
+                            margin: 0px auto;
+                            padding: 50px 0px 10px 0px;
+                        }
+                        &:nth-child(2) {
+                            img {
+                                position: relative;
+                                width: 100%;
+                                display: block;
+                                background-size: cover;
+                                padding: 0px;
+                            }
+                        }
+                        .songInfo {
+                            text-align: center;
+                            span {
+                                &:nth-child(1) {
+                                    text-transform: uppercase;
+                                    font-family: 'oswald', sans-serif;
+                                    font-size: 24px;
+                                }
+                                &:nth-child(3) {
+                                    text-transform: uppercase;
+                                    font-weight: bold;
+                                    font-size: 50px;
+                                    letter-spacing: 3px;
+                                }
+                                &:nth-child(5) {
+                                    font-family: 'oswald', sans-serif;
+                                    font-weight: 100;
+                                    font-size: 24px;
+                                }
+                            }
+                        }
+                    }
+                }
             }
         }
     }
@@ -74,6 +142,12 @@ header {
         font-size: 14px;
         line-height: 80px;
         .logo {
+            font-size: 14px;
+        }
+        .links {
+            font-size: 14px;
+        }
+        .socials {
             font-size: 14px;
         }
     }
