@@ -32,12 +32,12 @@ html, body {
 
 header {
     width: 100vw;
-    height: 6.975446428571429vw;
+    height: 4.166666666666667vw;
     color: #181818;
     z-index: 2;
     position: fixed;
     font-size: 1.0044642857142858vw;
-    line-height: 6.975446428571429vw;
+    line-height: 4.166666666666667vw;
     transition: background-color 0.3s ease-in-out;
     background-color: #CF5300;
     &.display {
@@ -55,7 +55,7 @@ header {
         text-align: center;
         color: #181818;
         a {
-            padding: 0px 2.7901785714285716vw 0px 0px;
+            padding: 0px 3.90625vw 0px 0px;
             &:nth-child(6) {
                 padding: 0px;
             }
@@ -77,26 +77,29 @@ header {
 .pageContainer {
     position: relative;
     z-index: 1;
-    padding-top: 6.975446428571429vw;
+    padding: 4.166666666666667vw 0px 0px 0px;
     overflow: hidden;
     width: 100vw;
-    height: 200vh;
+    height: 300vh;
     .contentWrapper {
         .introBlock {
-            height: calc(100vh - 6.975446428571429vw);
             overflow: hidden;
             .introContainer {
                 .gridContainer {
+                    max-height: calc(100vh - 4.16666667vw);
                     display: grid;
-                    grid-template-columns: 49.15% 49.15%;
+                    grid-template-columns: 50% 50%;
+                    
                     .gridItem {
+                        max-height: calc(100vh - 4.16666667vw);
                         img {
                             position: relative;
                             width: 50%;
+                            overflow: hidden;
                             display: block;
                             background-size: cover;
                             margin: 0px auto;
-                            padding: 50px 0px 10px 0px;
+                            padding: 100px 0px 10px 0px;
                         }
                         &:nth-child(2) {
                             img {
@@ -110,26 +113,118 @@ header {
                         .songInfo {
                             text-align: center;
                             span {
+                                color: #CF5300;
                                 &:nth-child(1) {
                                     text-transform: uppercase;
                                     font-family: 'oswald', sans-serif;
-                                    font-size: 24px;
+                                    font-size: 1.25vw;
                                 }
                                 &:nth-child(3) {
                                     text-transform: uppercase;
                                     font-weight: bold;
-                                    font-size: 50px;
+                                    font-size: 2.6041666666666665vw;
                                     letter-spacing: 3px;
                                 }
                                 &:nth-child(5) {
                                     font-family: 'oswald', sans-serif;
                                     font-weight: 100;
-                                    font-size: 24px;
+                                    font-size: 1.25vw;
                                 }
+                            }
+                            .listenButton {
+                                color: #CF5300;
+                                margin: 10px 0px 0px 0px;
+                                background-color: #181818;
+                                border: 1px solid white;
+                                border-bottom: 5px solid #CF5300;
+                                padding: 0.625vw 1.5625vw;
+                                cursor: pointer;
                             }
                         }
                     }
                 }
+            }
+        }
+    }
+    .contentWrapper {
+        .musicBlock {
+            padding: 50px 0px 0px 0px;
+            .musicContainer {
+                .title {
+                    color: #CF5300;
+                    font-size: 5.208333333333333vw;
+                    padding-left: 10.677083333333334vw;
+                }
+                .glide {
+                    .glide__track {
+                        padding: 5.208333333333333vw 0px 0px 0px;
+                        .glide__slides {
+                            .glide__slide {
+                                display: grid;
+                                grid-template-columns: 50% 50%;
+                                img {
+                                    position: relative;
+                                    width: 50%;
+                                    overflow: hidden;
+                                    display: block;
+                                    background-size: cover;
+                                    margin: 0px auto;
+                                }
+                            }
+                            .gridItem {
+                                margin: auto 0px;
+                                span {
+                                    color: #CF5300;
+                                    &:nth-child(5n+1) {
+                                        text-transform: uppercase;
+                                        font-family: 'oswald', sans-serif;
+                                        font-size: 1.25vw;
+                                    }
+                                    &:nth-child(3n+3) {
+                                        text-transform: uppercase;
+                                        font-weight: bold;
+                                        font-size: 2.6041666666666665vw;
+                                        letter-spacing: 3px;
+                                    }
+                                }
+                                .listenButton {
+                                    color: #CF5300;
+                                    margin: 10px 0px 0px 0px;
+                                    background-color: #181818;
+                                    border: 1px solid white;
+                                    border-bottom: 5px solid #CF5300;
+                                    padding: 0.625vw 1.5625vw;
+                                    cursor: pointer;
+                                }
+                            }
+                        }
+                    }
+                    .glide__arrows {
+                        padding: 25px 0px 0px 19.53125vw;
+                        .glide__arrow {
+                            font-size: 30px;
+                            color: #cf5300;
+                            background: black;
+                            border: 1px solid #cf5300;
+                            cursor: pointer;
+                            padding: 0.2604166666666667vw 0.78125vw;
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+        
+
+    .socialsBlock {
+        margin: 50px 0px 0px 0px;
+        background-color: #032E00;
+        height: 200px;
+        .socialsContainer {
+            .gridContainer {
+                display: grid;
+                grid-template-columns: 33% 33% 33%;
             }
         }
     }

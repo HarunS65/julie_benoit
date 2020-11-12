@@ -30,12 +30,12 @@ body .locked {
 }
 header {
   width: 100vw;
-  height: 6.97544643vw;
+  height: 4.16666667vw;
   color: #181818;
   z-index: 2;
   position: fixed;
   font-size: 1.00446429vw;
-  line-height: 6.97544643vw;
+  line-height: 4.16666667vw;
   transition: background-color 0.3s ease-in-out;
   background-color: #CF5300;
 }
@@ -55,7 +55,7 @@ header .links {
   color: #181818;
 }
 header .links a {
-  padding: 0px 2.79017857vw 0px 0px;
+  padding: 0px 3.90625vw 0px 0px;
 }
 header .links a:nth-child(6) {
   padding: 0px;
@@ -74,26 +74,30 @@ header .socials a:nth-child(4) {
 .pageContainer {
   position: relative;
   z-index: 1;
-  padding-top: 6.97544643vw;
+  padding: 4.16666667vw 0px 0px 0px;
   overflow: hidden;
   width: 100vw;
-  height: 200vh;
+  height: 300vh;
 }
 .pageContainer .contentWrapper .introBlock {
-  height: calc(100vh - 6.97544643vw);
   overflow: hidden;
 }
 .pageContainer .contentWrapper .introBlock .introContainer .gridContainer {
+  max-height: calc(100vh - 4.16666667vw);
   display: grid;
-  grid-template-columns: 49.15% 49.15%;
+  grid-template-columns: 50% 50%;
+}
+.pageContainer .contentWrapper .introBlock .introContainer .gridContainer .gridItem {
+  max-height: calc(100vh - 4.16666667vw);
 }
 .pageContainer .contentWrapper .introBlock .introContainer .gridContainer .gridItem img {
   position: relative;
   width: 50%;
+  overflow: hidden;
   display: block;
   background-size: cover;
   margin: 0px auto;
-  padding: 50px 0px 10px 0px;
+  padding: 100px 0px 10px 0px;
 }
 .pageContainer .contentWrapper .introBlock .introContainer .gridContainer .gridItem:nth-child(2) img {
   position: relative;
@@ -105,21 +109,102 @@ header .socials a:nth-child(4) {
 .pageContainer .contentWrapper .introBlock .introContainer .gridContainer .gridItem .songInfo {
   text-align: center;
 }
+.pageContainer .contentWrapper .introBlock .introContainer .gridContainer .gridItem .songInfo span {
+  color: #CF5300;
+}
 .pageContainer .contentWrapper .introBlock .introContainer .gridContainer .gridItem .songInfo span:nth-child(1) {
   text-transform: uppercase;
   font-family: 'oswald', sans-serif;
-  font-size: 24px;
+  font-size: 1.25vw;
 }
 .pageContainer .contentWrapper .introBlock .introContainer .gridContainer .gridItem .songInfo span:nth-child(3) {
   text-transform: uppercase;
   font-weight: bold;
-  font-size: 50px;
+  font-size: 2.60416667vw;
   letter-spacing: 3px;
 }
 .pageContainer .contentWrapper .introBlock .introContainer .gridContainer .gridItem .songInfo span:nth-child(5) {
   font-family: 'oswald', sans-serif;
   font-weight: 100;
-  font-size: 24px;
+  font-size: 1.25vw;
+}
+.pageContainer .contentWrapper .introBlock .introContainer .gridContainer .gridItem .songInfo .listenButton {
+  color: #CF5300;
+  margin: 10px 0px 0px 0px;
+  background-color: #181818;
+  border: 1px solid white;
+  border-bottom: 5px solid #CF5300;
+  padding: 0.625vw 1.5625vw;
+  cursor: pointer;
+}
+.pageContainer .contentWrapper .musicBlock {
+  padding: 50px 0px 0px 0px;
+}
+.pageContainer .contentWrapper .musicBlock .musicContainer .title {
+  color: #CF5300;
+  font-size: 5.20833333vw;
+  padding-left: 10.67708333vw;
+}
+.pageContainer .contentWrapper .musicBlock .musicContainer .glide .glide__track {
+  padding: 5.20833333vw 0px 0px 0px;
+}
+.pageContainer .contentWrapper .musicBlock .musicContainer .glide .glide__track .glide__slides .glide__slide {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+.pageContainer .contentWrapper .musicBlock .musicContainer .glide .glide__track .glide__slides .glide__slide img {
+  position: relative;
+  width: 50%;
+  overflow: hidden;
+  display: block;
+  background-size: cover;
+  margin: 0px auto;
+}
+.pageContainer .contentWrapper .musicBlock .musicContainer .glide .glide__track .glide__slides .gridItem {
+  margin: auto 0px;
+}
+.pageContainer .contentWrapper .musicBlock .musicContainer .glide .glide__track .glide__slides .gridItem span {
+  color: #CF5300;
+}
+.pageContainer .contentWrapper .musicBlock .musicContainer .glide .glide__track .glide__slides .gridItem span:nth-child(5n+1) {
+  text-transform: uppercase;
+  font-family: 'oswald', sans-serif;
+  font-size: 1.25vw;
+}
+.pageContainer .contentWrapper .musicBlock .musicContainer .glide .glide__track .glide__slides .gridItem span:nth-child(3n+3) {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 2.60416667vw;
+  letter-spacing: 3px;
+}
+.pageContainer .contentWrapper .musicBlock .musicContainer .glide .glide__track .glide__slides .gridItem .listenButton {
+  color: #CF5300;
+  margin: 10px 0px 0px 0px;
+  background-color: #181818;
+  border: 1px solid white;
+  border-bottom: 5px solid #CF5300;
+  padding: 0.625vw 1.5625vw;
+  cursor: pointer;
+}
+.pageContainer .contentWrapper .musicBlock .musicContainer .glide .glide__arrows {
+  padding: 25px 0px 0px 19.53125vw;
+}
+.pageContainer .contentWrapper .musicBlock .musicContainer .glide .glide__arrows .glide__arrow {
+  font-size: 30px;
+  color: #cf5300;
+  background: black;
+  border: 1px solid #cf5300;
+  cursor: pointer;
+  padding: 0.26041667vw 0.78125vw;
+}
+.pageContainer .socialsBlock {
+  margin: 50px 0px 0px 0px;
+  background-color: #032E00;
+  height: 200px;
+}
+.pageContainer .socialsBlock .socialsContainer .gridContainer {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
 }
 @media (max-width: 1200px) {
   header {
