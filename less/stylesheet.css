@@ -46,6 +46,8 @@ header.display {
 header .logo {
   float: left;
   color: #181818;
+  position: relative;
+  z-index: 1;
 }
 header .links {
   float: left;
@@ -64,8 +66,11 @@ header .socials {
   float: right;
   color: #181818;
   font-size: 1.33928571vw;
+  position: relative;
+  z-index: 1;
 }
 header .socials a {
+  cursor: pointer;
   padding: 0px 2.79017857vw 0px 0px;
 }
 header .socials a:nth-child(4) {
@@ -253,12 +258,32 @@ header .socials a:nth-child(4) {
   width: 80%;
   height: 80%;
 }
-.pageContainer .concertBlock .concertContainer .contentWrapper .title {
+.pageContainer .eventsBlock .eventsContainer .contentWrapper .title {
   color: #CF5300;
   font-size: 5.20833333vw;
 }
-.pageContainer .concertBlock .concertContainer .contentWrapper .concertTable table {
+.pageContainer .eventsBlock .eventsContainer .contentWrapper .eventsTable table {
+  text-align: center;
+  padding: 50px 0px 0px 0px;
   width: 100%;
+  font-size: 20px;
+  border-collapse: collapse;
+  line-height: 75px;
+}
+.pageContainer .eventsBlock .eventsContainer .contentWrapper .eventsTable table tr {
+  border: 0px;
+}
+.pageContainer .eventsBlock .eventsContainer .contentWrapper .eventsTable table tr:nth-child(1n+2) {
+  border-bottom: 1px solid white;
+}
+.pageContainer .eventsBlock .eventsContainer .contentWrapper .eventsTable table a {
+  cursor: pointer;
+}
+.pageContainer .eventsBlock .eventsContainer .contentWrapper .eventsTable table a button {
+  color: #fff;
+  background: transparent;
+  border: 1px solid white;
+  padding: 10px 25px;
 }
 @media (max-width: 1200px) {
   header {

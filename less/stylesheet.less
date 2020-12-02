@@ -47,6 +47,8 @@ header {
     .logo {
         float: left;
         color: #181818;
+        position: relative;
+        z-index: 1;
     }
     .links {
         float: left;
@@ -65,7 +67,10 @@ header {
         float: right;
         color: #181818;
         font-size: 1.3392857142857142vw;
+        position: relative;
+        z-index: 1;
         a {
+            cursor: pointer;
             padding: 0px 2.7901785714285716vw 0px 0px;
             &:nth-child(4) {
                 padding: 0px;
@@ -295,16 +300,36 @@ header {
         }
     }
 
-    .concertBlock {
-        .concertContainer {
+    .eventsBlock {
+        .eventsContainer {
             .contentWrapper {
                 .title {
                     color: #CF5300;
                     font-size: 5.208333333333333vw;
                 }
-                .concertTable {
+                .eventsTable {
                     table {
+                        text-align: center;
+                        padding: 50px 0px 0px 0px;
                         width: 100%;
+                        font-size: 20px;
+                        border-collapse: collapse;
+                        line-height: 75px;
+                        tr {
+                            border: 0px;
+                            &:nth-child(1n+2) {
+                                border-bottom: 1px solid white;
+                            }
+                        }
+                        a {
+                            cursor: pointer;
+                            button {
+                                color: #fff;
+                                background: transparent;
+                                border: 1px solid white;
+                                padding: 10px 25px;
+                            }
+                        }
                     }
                 }
             }
