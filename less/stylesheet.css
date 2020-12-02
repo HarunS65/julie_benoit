@@ -77,7 +77,7 @@ header .socials a:nth-child(4) {
   padding: 4.16666667vw 0px 0px 0px;
   overflow: hidden;
   width: 100vw;
-  height: 300vh;
+  height: 500vh;
 }
 .pageContainer .contentWrapper .introBlock {
   overflow: hidden;
@@ -143,7 +143,6 @@ header .socials a:nth-child(4) {
 .pageContainer .contentWrapper .musicBlock .musicContainer .title {
   color: #CF5300;
   font-size: 5.20833333vw;
-  padding-left: 10.67708333vw;
 }
 .pageContainer .contentWrapper .musicBlock .musicContainer .glide .glide__track {
   padding: 5.20833333vw 0px 0px 0px;
@@ -186,25 +185,80 @@ header .socials a:nth-child(4) {
   padding: 0.625vw 1.5625vw;
   cursor: pointer;
 }
-.pageContainer .contentWrapper .musicBlock .musicContainer .glide .glide__arrows {
-  padding: 25px 0px 0px 19.53125vw;
-}
-.pageContainer .contentWrapper .musicBlock .musicContainer .glide .glide__arrows .glide__arrow {
-  font-size: 30px;
-  color: #cf5300;
-  background: black;
-  border: 1px solid #cf5300;
-  cursor: pointer;
-  padding: 0.26041667vw 0.78125vw;
+.pageContainer .contentWrapper .musicBlock .musicContainer .glide .glide__arrow {
+  top: 65%;
+  border: none;
+  font-size: 50px;
 }
 .pageContainer .socialsBlock {
-  margin: 50px 0px 0px 0px;
+  margin: 250px 0px 0px 0px;
   background-color: #032E00;
-  height: 200px;
 }
 .pageContainer .socialsBlock .socialsContainer .gridContainer {
   display: grid;
   grid-template-columns: 33% 33% 33%;
+}
+.pageContainer .socialsBlock .socialsContainer .gridContainer .gridItem .title {
+  color: #fff;
+  font-size: 5.20833333vw;
+  line-height: 200px;
+}
+.pageContainer .socialsBlock .socialsContainer .gridContainer .gridItem .socials {
+  color: #181818;
+  font-size: 50px;
+  line-height: 200px;
+}
+.pageContainer .socialsBlock .socialsContainer .gridContainer .gridItem .socials a {
+  padding: 0px 25px 0px 0px;
+}
+.pageContainer .socialsBlock .socialsContainer .gridContainer .gridItem .form {
+  float: right;
+  padding: 50px 0px 0px 0px;
+}
+.pageContainer .socialsBlock .socialsContainer .gridContainer .gridItem .form label {
+  display: block;
+}
+.pageContainer .socialsBlock .socialsContainer .gridContainer .gridItem .form input {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid white;
+  width: 200px;
+  height: 50px;
+  color: #fff;
+  margin: 0px 25px 0px 0px;
+}
+.pageContainer .socialsBlock .socialsContainer .gridContainer .gridItem .form button {
+  color: #fff;
+  background: transparent;
+  border: 1px solid white;
+  padding: 17px 75px;
+}
+.pageContainer .videoBlock {
+  margin: 100px 0px 0px 0px;
+}
+.pageContainer .videoBlock .videoContainer .contentWrapper .videoPlayer .videoPlaceholder {
+  position: relative;
+  overflow: hidden;
+  width: 80%;
+  padding-top: 56.25%;
+  margin: 0px auto;
+}
+.pageContainer .videoBlock .videoContainer .contentWrapper .videoPlayer .videoPlaceholder iframe {
+  position: absolute;
+  margin: 0px auto;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 80%;
+  height: 80%;
+}
+.pageContainer .concertBlock .concertContainer .contentWrapper .title {
+  color: #CF5300;
+  font-size: 5.20833333vw;
+}
+.pageContainer .concertBlock .concertContainer .contentWrapper .concertTable table {
+  width: 100%;
 }
 @media (max-width: 1200px) {
   header {

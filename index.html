@@ -10,6 +10,7 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="glide-3.4.1/glide-3.4.1/dist/glide.min.js"></script>
         <link rel="stylesheet" href="glide-3.4.1/glide-3.4.1/dist/css/glide.core.min.css">
+        <link rel="stylesheet" href="glide-3.4.1/glide-3.4.1/dist/css/glide.theme.min.css">
     </head>
     <body>
 
@@ -42,15 +43,15 @@
 
                         <div class="gridContainer">
                             <div class="gridItem">
-                                <img src="assets/img/epcover.png">
+                                <img src="assets/img/jungle-rave-cover.png">
                                 <div class="songInfo">
                                     <span>J. Jones</span><br>
                                     <span>Jungle Rave</span><br>
                                     <span>Newest Single</span><br>
-                                    <button class="listenButton">Listen Now</button>
+                                    <a><button class="listenButton">Listen Now</button></a>
                                 </div>
                             </div>
-                            <div class="gridItem"><img src="assets/img/homepage2.png"></div>
+                            <div class="gridItem"><img src="assets/img/homepage.png"></div>
                         </div>
 
                     </div>
@@ -72,36 +73,81 @@
                             </div>
                 
                             <div class="glide__arrows" data-glide-el="controls">
-                              <button class="glide__arrow glide__arrow--left" data-glide-dir=">"><i class="fas fa-angle-left"></i></button>
-                              <button class="glide__arrow glide__arrow--right" data-glide-dir=">"><i class="fas fa-angle-right"></i></button>
+                                <button class="glide__arrow glide__arrow--left" data-glide-dir=">"><i class="fas fa-angle-left"></i></button>
+                                <button class="glide__arrow glide__arrow--right" data-glide-dir=">"><i class="fas fa-angle-right"></i></button>
                             </div>
+
                         </div>
                     </div>
                 </div>
             </div>
                 
-                <div class="socialsBlock">
-                    <div class="socialsContainer">
-                        <div class="contentWrapper">
-                            <div class="gridContainer">
-                                <div class="gridItem"><span class="title">FOLLOW</span></div>
-                                <div class="gridItem">
-                                    <div class="socials">
-                                        <a href="#"><i class="fab fa-facebook-square"></i></a>
-                                        <a href="#"><i class="fab fa-instagram"></i></a>
-                                        <a href="#"><i class="fab fa-spotify"></i></a>
-                                        <a href="#"><i class="fab fa-youtube"></i></a>
-                                    </div>
+            <div class="socialsBlock">
+                <div class="socialsContainer">
+                    <div class="contentWrapper">
+                        <div class="gridContainer">
+                            <div class="gridItem"><span class="title">FOLLOW</span></div>
+                            <div class="gridItem">
+                                <div class="socials">
+                                    <a href="#"><i class="fab fa-facebook-square"></i></a>
+                                    <a href="#"><i class="fab fa-instagram"></i></a>
+                                    <a href="#"><i class="fab fa-spotify"></i></a>
+                                    <a href="#"><i class="fab fa-youtube"></i></a>
                                 </div>
-                                <div class="gridItem"></div>
+                            </div>
+                            <div class="gridItem">
+                                <form class="form">
+                                    <label>Newsletter</label>
+                                    <input placeholder="Emailaddress"></input>
+                                    <button>Subscribe</button>
+                                </form>
                             </div>
                         </div>
                     </div>
                 </div>
-
             </div>
-        </div>
 
-        <script src="js/main.js"></script>
+            <div class="videoBlock">
+                <div class="videoContainer">
+                    <div class="contentWrapper">
+                        <div class="videoPlayer">
+            
+                            <div class="videoPlaceholder">
+                                <iframe src="https://youtube.com/embed/PNzI74yQmQE" frameborder="0" allowfullscreen></iframe>
+                            </div>
+    
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="concertBlock">
+                <div class="concertContainer">
+                    <div class="contentWrapper">
+                        <span class="title">Concerts</span>
+                        <div class="concertTable">
+                            <table>
+                                <tr>
+                                  <th>Date</th>
+                                  <th>Country</th>
+                                  <th>Location</th>
+                                  <th></th>
+                                </tr>
+                                <tr>
+                                  <td>JAN 01</td>
+                                  <td>The Netherlands, Amsterdam</td>
+                                  <td>Ziggo Dome</td>
+                                  <td><button>Tickets</button></td>
+                                </tr>
+                              </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
     </body>
 </html>
